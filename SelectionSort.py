@@ -1,7 +1,7 @@
 import time
 import random
 
-def mergeSort(li2):
+'''def mergeSort(li2):
     if len(li2) > 1:
         m = len(li2)//2
         left = li2[:m]
@@ -24,7 +24,7 @@ def mergeSort(li2):
         while j < len(right):
             li2[k] = right[j]
             j += 1
-            k += 1
+            k += 1'''
 
 def selectionSort(li):
     sortedList = []
