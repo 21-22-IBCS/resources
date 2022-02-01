@@ -23,20 +23,35 @@ def main():
     #strip() string method removes specific characters from the beginning and ending
     #of a string
 
-    nad = "  iace  a  nmb "
+    nad = "The tree is tall."
     print(nad)
-    justIce = nad.strip(" anmb")
-    print(justIce)
+    fixed = nad.replace("e","")
+    print(fixed)
+    #justIce = nad.strip("")
+    #print(justIce)
 
     #using files in python
     f = open("odyssey.txt", "r")
     
     #read() returns the string of the entire file
-    #print(f.read())
+    wholeText = f.read()
 
     #readline() returns one line at a time
-    for i in range(40):
-        print(f.readline())
+    '''for i in range(40):
+        print(f.readline())'''
+
+    listOdyssey = wholeText.split(" ")
+    ind = listOdyssey.index("and\nmost")
+    print(ind)
+    print(listOdyssey[21])
+    newList = []
+    for i in range(50):
+        tempList = listOdyssey[i].split("\n")
+        for e in tempList:
+            newList.append(e)
+
+    print(newList)    
+        
 
 
 
