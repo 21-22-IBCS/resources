@@ -3,7 +3,11 @@ from Button import*
 from math import*
 
 def calcy(f, num):
-    if "sqrt(x)" in f:
+    if "+" in f:
+        l = f.split("+")
+        result = calcy(l[0], num) + calcy(l[1], num)
+        return result
+    elif "sqrt(x)" in f:
         return sqrt(num)
     elif "x^2" in f:
         return num**2
