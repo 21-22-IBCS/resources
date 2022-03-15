@@ -24,6 +24,7 @@ def main():
             for j in range(8):
                 if b.cells[i][j].isClicked(m):
                     b.play(i,j)
+                    b.calculateScore()
 
 
 if __name__ == "__main__":
